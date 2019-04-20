@@ -1,0 +1,12 @@
+
+<mat-grid-list cols="4" rowHeight='200px'>
+    <mat-grid-tile>
+        <app-shopping-edit></app-shopping-edit>
+    </mat-grid-tile>
+</mat-grid-list>
+
+<mat-list>
+    <mat-list-item *ngFor = 'let ingredient of ingredients' class = 'ingr'>
+        {{ingredient.name}} ({{ingredient.amount}})
+    </mat-list-item>
+</mat-list>

@@ -1,0 +1,12 @@
+<img [src]="recipeDetail.imagePath" style="max-height: 100px">
+<h1>{{recipeDetail.name}}</h1>
+<button mat-raised-button color="primary" [matMenuTriggerFor]="menu">Manage Recipe <mat-icon>arrow_drop_down</mat-icon>
+ </button>
+ <mat-menu #menu="matMenu">
+    <button mat-menu-item>To Shopping List</button>
+    <button mat-menu-item>Edit Recipe</button>
+    <button mat-menu-item>Delete Recipe</button>
+  </mat-menu>
+ <p>{{recipeDetail.description}}</p>
+ <p>Ingredients</p>
+ 

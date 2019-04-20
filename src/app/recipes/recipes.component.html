@@ -1,0 +1,27 @@
+<!-- <mat-grid-list cols="2" rowHeight="270px" role="list">
+  <mat-grid-tile role="listitem">
+      <app-recipe-list (toRecipe) = 'recipe = $event'></app-recipe-list>
+  </mat-grid-tile>
+  <mat-grid-tile role="listitem">
+      <app-recipe-detail *ngIf = 'recipe; else infoText' [recipeDetail] = 'recipe' role="list">
+        <ng-template #infoText>
+          <p>Please select a recipe!</p>
+        </ng-template>
+      </app-recipe-detail>
+  </mat-grid-tile>
+</mat-grid-list> -->
+
+<div class="container">
+  <div class="recList">
+    <app-recipe-list></app-recipe-list>
+  </div>
+  <div class="recDetail">
+    <app-recipe-detail *ngIf = 'recipe; else infoText' [recipeDetail] = 'recipe' role="list">
+      <ng-template #infoText>
+        <p>Please select a recipe!</p>
+      </ng-template>
+    </app-recipe-detail>
+  </div>
+</div>
+    
+ 
