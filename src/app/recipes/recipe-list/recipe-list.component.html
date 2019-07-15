@@ -17,6 +17,6 @@
     <p>{{recipe.description}}</p>
   </mat-card-content>
 </mat-card> -->
-<button mat-flat-button color="primary">New Recipe</button>
+<button mat-flat-button color="primary" routerLink = '/recipes/new' (click) = 'onNewRecipe()'>New Recipe</button>
 <hr>
-<app-recipe-item [recipe] = 'recipeEl' *ngFor = 'let recipeEl of recipes'></app-recipe-item>
+<app-recipe-item [recipe] = 'recipeEl' *ngFor = 'let recipeEl of recipes; let i = index' [id] = 'i'></app-recipe-item>

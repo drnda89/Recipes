@@ -1,10 +1,10 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row>
-    <span class="title">Recipe Book</span>
-    <span class="recipes" (click) = 'send("recipe")'>Recipes</span>
-    <span class="shopping" (click) = 'send("shopping-list")'>Shopping List</span>
+    <span class="title" routerLink = '/'>Recipe Book</span>
+    <span class="recipes" routerLink = '/recipes' routerLinkActive = 'active'>Recipes</span>
+    <span class="shopping" routerLink = '/shopping-list' routerLinkActive = 'active'>Shopping List</span>
     <span class="example-spacer"></span>
-    <a href="#"><mat-icon [matMenuTriggerFor]="menu">menu</mat-icon>
+    <a style="cursor: pointer"><mat-icon [matMenuTriggerFor]="menu">menu</mat-icon>
       <!-- <button mat-button [matMenuTriggerFor]="menu">Menu</button> -->
       <mat-menu #menu="matMenu">
         <button mat-menu-item>Save Data</button>

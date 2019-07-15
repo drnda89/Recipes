@@ -1,4 +1,3 @@
-<app-header (message) = 'recieve($event)'></app-header>
+<app-header></app-header>
 <!-- <app-header (message) = 'featureMsg = $event'></app-header> -->
-<app-recipes *ngIf = 'featureMsg === "recipe"'></app-recipes>   
-<app-shopping-list *ngIf = 'featureMsg !== "recipe"'></app-shopping-list>
+<router-outlet></router-outlet>

@@ -10,13 +10,22 @@
       margin-left: 30px;
       margin-right: 30px;
       cursor: pointer;
+      outline: none;
   }
 
   .shopping {
     cursor: pointer;
+    outline: none;
   }
   
   .title {
       font-size: 30px;
       color: aqua;
+      cursor: pointer;
+  }
+
+  .active {
+    outline: none;
+    background: aqua;
+    padding: 16px 10px;
   }
