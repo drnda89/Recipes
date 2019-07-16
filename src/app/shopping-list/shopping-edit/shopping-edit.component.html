@@ -1,12 +1,12 @@
-<form class="example-form">
+<form class="example-form" (ngSubmit) = 'add(f)' #f = 'ngForm'>
     <mat-form-field class="example-full-width">
-      <input #inputName matInput placeholder="Name">
+      <input name = 'name' ngModel matInput placeholder="Name" required>
     </mat-form-field>
     <mat-form-field class="example-full-width">
-        <input #inputAmount matInput placeholder="Amount">
+        <input name = 'amount' ngModel matInput placeholder="Amount" type="number" required>
     </mat-form-field>
+    <button type="submit" mat-raised-button color = 'primary' style="margin-right:5px" [disabled] = '!f.valid'>Add</button>
+    <button type = 'button' mat-raised-button color = 'warn' style="margin-right:5px" >Delete</button>
+    <button type = 'button' mat-raised-button color = 'accent'>Clear</button>
 </form>
-<button mat-raised-button color = 'primary' style="margin-right:5px" (click) = 'add()'>Add</button>
-<button mat-raised-button color = 'warn' style="margin-right:5px">Delete</button>
-<button mat-raised-button color = 'accent'>Clear</button>
 

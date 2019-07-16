@@ -7,7 +7,7 @@ import { Subject } from 'rxjs';
 })
 export class ShoppingListService {
   sendIngredients = new Subject<Ingredient[]>();
-
+  startedEditing = new Subject<number>();
 
   ingredients: Ingredient[] = [
     new Ingredient('Apples', 5),
@@ -19,6 +19,10 @@ export class ShoppingListService {
   addIngredient(ingredient) {
     this.ingredients.push(ingredient);
     this.sendIngredients.next(this.ingredients);
+  }
+
+  getIngredient(index) {
+    return this.ingredients[index];
   }
 
   addToShoppingList(ingredients) {
