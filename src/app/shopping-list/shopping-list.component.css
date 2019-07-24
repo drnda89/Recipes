@@ -2,3 +2,11 @@
     cursor: pointer;
     border: 1px solid black;
 }
+
+.width {
+    max-width: 500px;
+}
+
+.container {
+    margin-left: 50px;
+}

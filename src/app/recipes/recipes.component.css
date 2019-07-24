@@ -1,16 +1,17 @@
 .container {
-    width: 1000px;
+    width: 1300px;
     background-color: #ffcc33;
     margin: auto;
 }
 
 .recList {
-    width: 300px;
+    width: 350px;
     float: left;
-    padding-right: 200px;
+    padding-right: 150px;
+    padding-left: 200px;
 }
 .recDetail {
- width: 300px;
- float: left;
- padding-left: 200px;
+    width: 400px;
+    float: left;
 }
+

@@ -7,4 +7,19 @@
   .example-full-width {
     width: 100%;
   }
+
+  .small-width {
+    width: 60%;
+    margin-right: 26px;
+  }
+
+  .small-width1 {
+    width: 10%;
+    margin-right: 26px;
+
+  }
+
+  .small-width2 {
+    width: 10%;
+  }
   
