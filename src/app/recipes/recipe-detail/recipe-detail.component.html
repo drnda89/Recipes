@@ -5,7 +5,7 @@
  <mat-menu #menu="matMenu">
     <button mat-menu-item (click) = 'toShoppingList()'>To Shopping List</button>
     <button mat-menu-item [routerLink] = '["edit"]'>Edit Recipe</button>
-    <button mat-menu-item>Delete Recipe</button>
+    <button mat-menu-item (click) = 'onDelete()'>Delete Recipe</button>
   </mat-menu>
  <p>{{recipeDetail.description}}</p>
  <mat-list role="list">
